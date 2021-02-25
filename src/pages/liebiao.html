@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/home.css">
+    
+    <style>
+        .pagination{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border:1px solid red;
+        }
+        .h5{
+            display: inline-block;
+            white-space: nowrap;
+            width: 100%;
+            overflow: hidden;
+            text-overflow:ellipsis;
+        }
+        .btn{
+            width: 245px;
+        }
+        .btn:hover{
+            background: red;
+            color: seashell;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="center">
+            <div class="area_center">
+                <div class="topbar">
+                    <div class="bar_left">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="">商城首页</a>
+                            </li>
+                            <li>
+                                <a href="./login.html">登入</a>
+                                <span></span>
+                                <a href="./add.html">注册</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bar_right">
+                        <ul>
+                            <li><a href="">个人中心</a></li>
+                            <li class="li_ab">
+                                <a href="">帮助中心</a>
+                                <div class="help">
+                                    <div><a href="">售后服务</a></div>
+                                    <div><a href="">售后服务</a></div>
+                                    <div><a href="">售后服务</a></div>
+                                    <div><a href="">售后服务</a></div>
+                                </div>
+                            </li>
+                            <li><a href="">手机版</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div>
+        <div class="area_center">
+            <div class="ssbigbox">
+                <div class="ssbigbox2">
+                    <div class="ssbigbox3">
+                        <a href="">
+                            <img src="http://static2.scloud.letv.com/common/img/lemall_logo.png" alt="">
+                        </a>
+                    </div>
+                    <!-- <div class="caidan">
+                        <ul class="caidan1">
+                            <li>
+                                <a href="">数码家电<span>→</span></a>
+                                <div class="caidan2">
+                                    <ul>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/digital/zhineng.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/digital/shenghuo.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/digital/mobile.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/digital/diannao.jpg">智能设备</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/digital/zhineng.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/digital/shenghuo.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/digital/mobile.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/digital/diannao.jpg">智能设备</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href=""></a><img src="http://static2.scloud.letv.com/lemall/images/digital/zhineng.jpg">智能设备</li>
+                                        <li><a href=""></a><img src="http://static2.scloud.letv.com/lemall/images/digital/shenghuo.jpg">智能设备</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">耳机配件<span>→</span></a>
+                                <div class="caidan3">
+                                    <ul>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/digital/chufang.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/digital/dajiadian.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/digital/mobile.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/digital/meizhuang.jpg">智能设备</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/digital/chufang.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/digital/dajiadian.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/digital/mobile.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/digital/meizhuang.jpg">智能设备</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href=""></a><img src="http://static2.scloud.letv.com/lemall/images/digital/zhineng.jpg">智能设备</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">手机配件<span>→</span></a>
+                                <div class="caidan4">
+                                    <ul>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/drinks/baijiu.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/drinks/bailandi.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/drinks/pijiu.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/drinks/whisky.jpg">智能设备</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/drinks/baijiu.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/drinks/bailandi.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/drinks/pijiu.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/drinks/whisky.jpg">智能设备</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href=""></a><img src="http://static2.scloud.letv.com/lemall/images/digital/zhineng.jpg">智能设备</li>
+                                       
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">家居用品<span>→</span></a>
+                                <div class="caidan5">
+                                    <ul>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/foods/milk.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/foods/meat.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/foods/chongtiao.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/foods/xiuxian.jpg">智能设备</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/foods/milk.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/foods/meat.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/foods/chongtiao.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/foods/xiuxian.jpg">智能设备</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href=""></a><img src="http://static2.scloud.letv.com/lemall/images/digital/zhineng.jpg">智能设备</li>
+                                        <li><a href=""></a><img src="http://static2.scloud.letv.com/lemall/images/digital/shenghuo.jpg">智能设备</li>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">家居生活<span>→</span></a>
+                                <div class="caidan6">
+                                    <ul>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/digital/zhineng.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/digital/shenghuo.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/digital/mobile.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/digital/diannao.jpg">智能设备</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/digital/zhineng.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/digital/shenghuo.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/digital/mobile.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/digital/diannao.jpg">智能设备</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href=""></a><img src="http://static2.scloud.letv.com/lemall/images/digital/zhineng.jpg">智能设备</li>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">食品生鲜<span>→</span></a>
+                                <div class="caidan7">
+                                    <ul>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/home/shouna.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/home/chufang.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/home/bangong.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/home/fushi.jpg">智能设备</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/home/shouna.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/home/chufang.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/home/bangong.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/home/fushi.jpg">智能设备</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href=""></a><img src="http://static2.scloud.letv.com/lemall/images/digital/zhineng.jpg">智能设备</li>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">酒水饮料<span>→</span></a>
+                                <div class="caidan8">
+                                    <ul>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/muying/yingtong.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/muying/tongzhuang.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/clothes/nanzhuang.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/muying/yunma.jpg">智能设备</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/muying/yingtong.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/muying/tongzhuang.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/clothes/nanzhuang.jpg">智能设备</a></li>
+                                        <li><a href=""><img src="http://static2.scloud.letv.com/lemall/images/muying/yunma.jpg">智能设备</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href=""></a><img src="http://static2.scloud.letv.com/lemall/images/digital/zhineng.jpg">智能设备</li>
+                                        <li><a href=""></a><img src="http://static2.scloud.letv.com/lemall/images/digital/shenghuo.jpg">智能设备</li>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                    </div> -->
+                    <!-- <div class="drzc">
+                        <div class="drbig1">
+                            <div>
+                                <div>
+                                    <img src="http://img2-lemall.letvimg.com/le-cloud/resource/images/home/20181122/default.jpg" alt="">
+                                </div>
+                                <p>Hi你好</p>
+                                <span>欢迎来到乐视商城</span>
+                            </div>
+                            
+                        </div>
+                        <div class="drbig">
+                            <a href="./login.html" class="dr">登入</a>
+                            <a href="./add.html" class="zc">注册</a>
+                        </div>
+                        <div class="sczx">
+                            <p>商城咨询</p> <a href="">跟多 >></a>
+                        </div>
+                    </div> -->
+                    <div class="ssk">
+                        <div class="sous">
+                            <input type="text" style="width: 350px;">
+                            <button style="height: 36px;">搜  &nbsp;&nbsp;&nbsp;索</button>
+                        </div>
+                        <div class="gwc">
+                            <a href="./car.html">购物车</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>列表页</h1>
+        <div class="row"></div>
+        <div class="pagination"></div>
+    </div>
+    <div class="shouhou">
+        <div class="area_center shouhou2">
+            <ul>
+                <li><img src="../images/01.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;正品保证</li>
+                <li><a href=""><img src="../images/01.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;物流服务</a></li>
+                <li><a href=""><img src="../images/01.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;正品保证</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <div><img src="../images/02.png" alt=""></div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/pagination.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/list.js"></script>
+   
+    
+</body>
+</html>

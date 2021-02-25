@@ -1,0 +1,154 @@
+.container{
+    width: 986px;
+    margin: 0 auto;
+}
+header{
+    height: 120px;
+    border-bottom: 1px solid #dd00a7;
+}
+body{
+    background: url(https://i1.letvimg.com/lc07_img/201607/29/15/13/operatbg.jpg) no-repeat center;
+}
+header>div>h1>a{
+    display: block;
+    width: 300px; 
+    height: 62px;
+    background: url(https://misc.gomein.net.cn/images/regfront/register/registerlogo.png) no-repeat;
+    margin-top: 35px;
+    float: left;
+    text-indent: -999999px;
+}
+header>div>p{
+    float: right;
+    width: 135px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 110px 0 0 0 ;
+
+}
+header>div>p>a{
+    float: right;
+    color: #2875cc;
+}
+#add{
+    margin-left: 700px;
+    height: 703px;
+}
+#add #form{
+    padding: 0 30px;
+    height: 520px;
+    width: 450px;
+    margin:44px auto 0;
+    background: #ffffff;
+}
+#add #form>p{
+    border: 1px solid #cccccc;
+    width: 398px;
+    height: 48px;
+    position: relative;
+}
+#add #form>p>input{
+    width: 316px;
+    height: 48px;
+    border: 0;
+    box-sizing: border-box;
+}
+#add #form>p>input::placeholder{
+    color: #cccccc;
+}
+#add #form>p:last-child>input{
+    width: 398px;
+    height: 48px;
+}
+#add #form>.verify:nth-of-type(3)>span{
+    display: inline-block;
+    width: 40px;
+    height: 14px;
+    line-height: 14px;
+     background: #a5a5a5 ;/*#ff4c4c */
+    color: #ffffff;
+    text-align: center;
+    margin: 0 1px;
+}
+#add #form>p>span{
+    width: 82px;
+    height: 48px;
+    line-height: 48px;
+    text-indent: 10px;
+    color: #666666;
+    float: left;
+}
+#add #form>p{
+    position: relative;
+}
+#add #form>p>.bbb{
+    position: absolute;
+    bottom: 5px;
+    right: 2px;
+    width: 150px;
+    height: 10px;
+    line-height: 10px;
+    text-align: center;
+    font-size: 12px;
+    color:#cccccc ;
+}
+#st1{
+    position: absolute;
+    right: 20px;
+    top: 8px;
+    width: 100px;
+    height: 22px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    font-style:italic;
+    cursor: pointer;
+    overflow: hidden;
+}
+#add #form>#hh{
+    width: 198px;
+    height: 49px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid #ee3b3b;
+    font-size: 24px;
+    font-style: italic;
+    line-height: 49px;
+    text-align: center;
+}
+#add #form>p>.r{
+    position: absolute;
+    color: #66b746;
+    top: 16px;
+    right: 13px;
+    width: 16px;
+    height: 16px;
+   text-align: center;
+   text-indent: 0;
+    line-height: 16px;
+    border: 1px solid #66b746;
+    font-size: 12px;
+    border-radius: 50%;
+}
+#add #form>.verify{
+    display: block;
+    height: 20px;
+    color: #888888;
+
+}
+#div{
+    margin-top: 28px;
+    cursor: pointer;
+}
+footer{
+    border-top: 1px solid #dd00a7;
+    height: 292px;
+    background: #f7f7f7;
+    overflow: hidden;
+}
+footer img{
+    margin-top: -2px;
+    cursor: pointer;
+}

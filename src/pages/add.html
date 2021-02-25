@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乐视商城</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/add.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="banner">
+                <img src="https://i1.letvimg.com/lc02_user/202001/07/10/29/157836414332854.png" alt="">
+            </div>
+            <p>我已经注册，现在就<a href="./login.html">登录</a></p>
+        </div>
+    </header>
+    <section id="add" >
+        <div id="form">
+            <p id="hh">欢迎注册</p>
+            <span class="verify"></span>
+            <p><span>用户名</span><input type="text" id="text" placeholder="请输入用户名"></p>
+            <span class="verify"></span>
+            <p><span>设置密码</span><input type="password" id="pass" placeholder="请设置密码"></p>
+            <span class="verify"></span>
+            <p><span>确定密码</span><input type="password" id="pass1" placeholder="请确定密码"></p>
+            <span class="verify"></span>
+            <p><span>手机号码</span><input type="text" id="mobile" placeholder="请输入常用手机号"></p>
+            <span class="verify"></span>
+            <p>
+                <span>验证码</span>
+                <input type="text" id="yzm">
+                <strong id="st1"><span id="sp1">1</span><span id="sp2">2</span><span id="sp3">3</span><span id="sp4">4</span><span id="sp5">6</span><span id="sp6">6</span></strong>
+                <span class="bbb">看不清请点击下一站</span>
+            </p>
+            <span class="verify"></span>
+            <p><input type="submit" id="sub" value="注册"></p>
+        </div>
+    </section>
+</body>
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script>
+    // 第一个
+    $("#text").eq(0).on("input",function(){
+        var reg  = /^\w{6,20}$/;
+        if(reg.test($("#text").eq(0).val())){
+            $(".verify").eq(1).empty();
+            $("#add #form>p").eq(1).css({
+                border:"1px solid #cccccc",
+            })
+            $("<span class='r'>√</span>").appendTo($("#add #form>p").eq(1));
+            $("#text").eq(0).prop("index",true);
+        }else{
+            $("#text").eq(0).next().remove();
+            $(".verify").eq(1).text("长度应为6-20个字符,可以为数字字母_").css("color","#ff4c4c");
+            $("#add #form>p").eq(1).css({                  //变红
+                border:"1px solid #ee3b3b",
+            })
+            $("#text").eq(0).prop("index",false);
+        }
+    })
+
+    // 第二个
+    $("#pass").eq(0).on("input",function(){
+        var reg  = /^[\w\!\@\#\$\%\^\&\*\_\+\=\_\{\}\:\"\>\?\<"]{6,20}$/;
+        if(reg.test($("#pass").eq(0).val())){
+            var reg1 = /^\d{6,20}$/;
+            var reg2 = /^[a-zA-Z]{6,20}$/;
+            var reg3 = /^[\!\@\#\$\%\^\&\*\_\+\=\_\{\}\:\"\>\?\<]{6,20}$/;
+            var reg4 =  /\d/;
+            var reg5 = /[a-zA-Z]/;
+            var reg6 = /[\!\@\#\$\%\^\&\*\_\+\=\_\{\}\:\"\>\?\<]/;
+            $("<span class='r'>√</span>").appendTo($("#add #form>p").eq(2));
+            $(".verify").eq(2).html("安全程度：<span>弱</span><span>中</span><span>强</span>").css({
+                color:"#cccccc"
+            });
+            if(reg1.test($("#pass").eq(0).val()) || reg2.test($("#pass").eq(0).val()) || reg3.test($("#pass").eq(0).val())){
+                $(".verify>span").css({
+                    background:"#a5a5a5"
+                })
+                $(".verify>span").eq(0).css({
+                    background:"#ff4c4c"
+                })
+            }else if(reg4.test($("#pass").eq(0).val()) && reg5.test($("#pass").eq(0).val())&&reg6.test($("#pass").eq(0).val())){
+                $(".verify>span").css({
+                    background:"#a5a5a5"
+                })
+                $(".verify>span").css({
+                    background:"#a5a5a5"
+                })
+                $(".verify>span").eq(0).css({
+                    background:"#ff4c4c"
+                })
+                $(".verify>span").eq(1).css({
+                    background:"#ff4c4c"
+                })
+                $(".verify>span").eq(2).css({
+                    background:"#ff4c4c"
+                })
+            }else{
+                $(".verify>span").css({
+                    background:"#a5a5a5"
+                })
+                $(".verify>span").eq(0).css({
+                    background:"#ff4c4c"
+                });
+                $(".verify>span").eq(1).css({
+                    background:"#ff4c4c"
+                })
+            }
+            $("#add #form>p").eq(2).css({
+                border:"1px solid #cccccc",
+            })
+            $("#pass").eq(0).prop("index",true);
+        }else{
+            $("#pass").eq(0).next().remove();
+            $(".verify").eq(2).empty();
+            $(".verify").eq(2).text("6-20个字符，包含字母、数字或符号").css("color","#ff4c4c");
+            $("#add #form>p").eq(2).css({
+                border:"1px solid #ee3b3b",
+            })
+            $("#pass").eq(0).prop("index",false);
+        }
+    })
+    $("#pass1").eq(0).on("blur",function(){
+        var reg  = /^[\w\!\@\#\$\%\^\&\*\_\+\=\_\{\}\:\"\>\?\<"]{6,20}$/;
+        if(reg.test($("#pass1").eq(0).val())){
+            if($("#pass1").eq(0).val()==$("#pass").eq(0).val()){
+                $("<span class='r'>√</span>").appendTo($("#add #form>p").eq(3));
+                $(".verify").eq(3).empty();
+                $("#pass1").eq(0).prop("index",true)
+            }else{
+                $("#add #form>p").eq(3).css({
+                    border:"1px solid #ee3b3b",
+                })
+                $(".verify").eq(3).text("俩次输入不一致").css("color","#ff4c4c");
+                $("#pass1").eq(0).prop("index",false)
+            }
+        }
+        
+    })
+    $("#pass1").eq(0).on("focus",function(){
+        $(".verify").eq(3).text("请再次输入密码").css("color","#cccccc");
+            $("#add #form>p").eq(3).css({
+                    border:"1px solid #cccccc",
+            })
+    })
+    $("#mobile").eq(0).on("input",function(){
+        var reg  = /^\d{11}$/;
+        if(reg.test( $("#mobile").eq(0).val())){
+            $(".verify").eq(4).empty();
+            $("#add #form>p").eq(4).css({
+                border:"1px solid #cccccc",
+            })
+            $("<span class='r'>√</span>").appendTo($("#add #form>p").eq(4));
+            $("#mobile").eq(0).prop("index",true)
+        }else{
+            $("#mobile").eq(0).next().remove();
+            $(".verify").eq(4).text("手机号码格式不对").css("color","#ff4c4c");
+            $("#add #form>p").eq(4).css({                  //变红
+                border:"1px solid #ee3b3b",
+            })
+            $("#mobile").eq(0).prop("index",false)
+
+        }
+    })
+    // $("#yzm").eq(0).on("blur",function(){
+    //     var str = $("#yzm").eq(0).val().toLocaleLowerCase();
+    //     var str1 = ($("#sp1").text() + $("#sp2").text() + $("#sp3").text() + $("#sp4").text() + $("#sp5").text() + $("#sp6").text()).toLocaleLowerCase();
+    //         if($("#yzm").eq(0).val()===''){
+    //             $(".verify").eq(5).text("请输入验证码").css("color","#cccccc");
+    //             $("#add #form>p").eq(5).css({
+    //                 border:"1px solid #cccccc",
+    //             })
+    //         }else{
+    //             $(".verify").eq(5).empty();
+
+    //         }
+    //         if(str == str1){
+    //             $("#yzm").eq(0).prop("index",true);
+    //         }
+    //     })
+    
+    $("#sub").click(function(){
+        if(!$("#text").eq(0).prop("index")){
+            alert("请仔细核对您的用户名是否符合规范")
+        }else if(!$("#pass1").eq(0).prop("index")){
+            alert("请仔细核对您的密码是否符合规范")
+        }else if(!$("#pass1").eq(0).prop("index")){
+            alert("俩次输入的密码不相同,请仔细核对")
+        }else if(!$("#mobile").eq(0).prop("index")){
+            alert("请仔细核对您的手机号码是否符合规范")
+        }
+        // else if(!$("#yzm").eq(0).prop("index")){
+        //     alert("验证码输入错误")
+        // }
+        else{
+            $.ajax({
+                url:"../php/login1.php",
+                type:"POST",
+                dataType:"json",
+                data:{
+                    type:"add",
+                    username:$("#text").eq(0).val(),
+                    password:$("#pass").eq(0).val(),
+                    uphone:$("#mobile").eq(0).val(),
+                },
+                complete(){
+                            alert ('注册成功')
+                            location.href = "./login.html";
+                
+                }
+            })
+        }
+    })
+    regs($("#text").eq(0),"长度应为6-20个字符,可以为数字字母_",1)
+    regs($("#pass").eq(0),"6-20个字符，包含字母、数字或符号",2)
+    regs($("#mobile").eq(0),"请输入手机号码",4)
+
+    $("#add #form>p>input").on("focus",function(){
+        $(this).parent().css({
+                border:"1px solid #a5a5a5",
+            })
+    })
+
+    function regs(eq,str,num){
+        eq.on("blur",function(){
+            if(eq.val()===''){
+                $(".verify").eq(num).text(str).css("color","#cccccc");
+                $("#add #form>p").eq(num).css({
+                    border:"1px solid #cccccc",
+                })
+            }
+        })
+    }
+
+    function randomColor(){
+    var str = "rgba("+parseInt(Math.random() *256) + ","+ parseInt(Math.random() *256) + ","+parseInt(Math.random() *256)+",1)"
+    return str
+            }
+            function rand(n,m){
+                return n + parseInt(Math.random()*(m-n+1))
+            }
+            function $id(id){
+            return  document.getElementById(id);
+            }
+                function stochastic(){        //这个函数是生成随机数
+                    for(var i=1;i<=6;i++){
+                        var num = rand(48,122);
+                        if((num>57&&num<65)||(num>90&&num<97)){
+                            i--;
+                        }else{
+
+                       $id(`sp${i}`).innerHTML = String.fromCharCode(num)
+                       $id(`sp${i}`).style.color = randomColor();
+                       $id("st1").style.background = randomColor();
+                       $id(`sp${i}`).style.fontSize = rand(16,20)  +  'px';
+                        }
+                     
+                    }
+        
+                    
+                }
+                stochastic()
+                $id(`st1`).onclick = function(){            //给谁添加点击事件
+                    stochastic()
+                }
+    
+</script>
+</html>

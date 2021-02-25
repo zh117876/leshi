@@ -1,0 +1,164 @@
+.xqbig{
+    width: 1196px;
+    margin: 0 auto;
+}
+.xqbig #small img{
+    width: 440px;
+    height: 440px;
+}
+#big{
+    width: 640px;
+    height: 640px;
+    border: 1px solid #000;
+    overflow: hidden;
+    position: absolute;
+    top:-120px;
+    left : 360px;
+    display: none;
+}
+#mask{
+    width: 175px;
+    height: 175px;
+    background: paleturquoise;
+    position: absolute;
+    left:0;
+    top: 0;
+    opacity: 0.3;
+    display: none;
+    cursor: move;
+}
+.xqbig #big img{
+    width: 640px;
+    height: 640px;
+}
+.xqimg{
+    position: relative;
+    height: 448px;
+    float: left;
+}
+.xqsj{
+    margin-left: 150px;
+    width: 720px;
+    float: right;
+}
+.biaot{
+    font-size: 20px;
+    margin: 0 0 30px 0;
+}
+.xqsj div span{
+    font-size: 12px;
+    color: #888;
+    line-height: 50px;
+    padding-left: 10px;
+}
+#tsShopContainer{
+    float: left;
+}
+.jgbox{
+    display: flex;
+    width: 720px;
+    height: 60px;
+    background: #f9f9f9;
+
+}
+.jgbox i{
+    float: left;
+    line-height: 50px;
+    color: red;
+    font-size: 16px;
+}
+.jgbox em{
+    margin-left: 400px;
+    line-height: 60px;
+}
+.dizi>p{
+    margin-left: 58px;
+    font-size: 12px;
+}
+.dizi>i{
+    margin-left: 10px;
+}
+.guige ul li{
+    width: 59px;
+    height: 32px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 32px;
+    float: left;
+    margin: 0 10px;
+}
+.guige ul li:nth-child(2){
+    color: red;
+    border: 1px solid red;
+}
+.guige span{
+    float: left;
+}
+.guige ul{
+    float: left;
+    margin: 12px 0 0 20px;
+}
+.guige{
+    height: 70px;
+}
+.suliang span{
+    float: left;
+}
+.suliang{
+    height: 50px;
+    background: #f9f9f9;
+}
+.suliang>div{
+    border: 1px solid#cecece;
+    margin-left: 80px;
+    margin-top: 10px;
+    width: 107px;
+    height: 42px;
+    overflow: hidden;
+}
+.suliang>div>input{
+    font-size: 22px;
+    text-align: center;
+    line-height: 40px;
+    width: 25px;
+    height: 40px;
+    border: #f9f9f9;
+    float: left;
+    border-left: 1px solid #cecece;
+    border-right: 1px solid#cecece;
+}
+.suliang>div>a{
+    font-size: 26px;
+    text-align: center;
+    line-height: 40px;
+    color: black;
+    float: left;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+
+}
+.zongji{
+    height: 50px;
+}
+.zongji span{
+    margin-right: 30px;
+}
+.zongji i{
+
+    line-height: 50px;
+    color: red;
+    font-size: 16px;
+}
+.zongji a{
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    background-color: #f01e00;
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 200px;
+}

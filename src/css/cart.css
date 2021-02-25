@@ -1,0 +1,97 @@
+.cart_top {
+    height: 50px;
+    border: 1px solid #ececec;
+    width: 990px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.panel{
+    width: 990px;
+    margin: 0 auto;
+}
+.cart_top>div:nth-child(1){
+    font-size: 16px;
+    border-bottom: 3px solid red;
+    margin-left: 15px;
+    line-height: 50px;
+}
+.cart_top .szba>a{
+    background: #e7e7e7;
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+    border: 1px solid #e6e6e6;
+    color: #333;
+    text-align: center;
+    line-height: 38px;
+    margin: 5px 10px;
+}
+.car_cttop{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 990px;
+    margin: 0 auto;
+    padding: 0 6px;
+}
+.cart_center{
+    margin-top: 20px;
+}
+.car_cttop{
+    height: 38px;
+    background: #e7e7e7;
+    margin-bottom: 15px;
+}
+.car_cttop .shangpi{
+    width: 470px;
+    text-align: center;
+}
+.car_cttop div{
+    margin: auto 0;
+}
+.gwc_img img{
+    width: 70px;
+    height: 70px;
+}
+.car_ctbt{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 990px;
+    margin: 0 auto;
+    padding: 0 6px;
+
+}
+.car_ctbt .gwc_img{
+    width: 470px;
+    display: inline-flex;
+    justify-content: start;
+}
+.gwc_jj {
+    display: flex;
+    justify-content: space-around;
+    width: 80px;
+    height: 26px;
+    border: 1px solid #ececec;
+}
+.gwc_jj input{
+    width: 24px;
+}
+.car_btm{
+    display: flex;
+    justify-content: space-between;
+}
+.jiesuan{
+    width: 80px;
+    height: 40px;
+    background: red;
+
+}
+.ttt{
+    display: block;
+    width: 100px;
+    height: 50px;
+    background: #2884c7;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+}

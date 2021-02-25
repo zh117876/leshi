@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乐视商城</title>
+    <link rel="SHORTCUT ICON" href="../images/Gome.ico">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <!-- <link rel="stylesheet" href="../css/index.css"> -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="banner">
+                <img src="https://i1.letvimg.com/lc02_user/202001/07/10/29/157836414332854.png" alt="">
+            </div>
+        </div>
+    </header>
+    <div id="add">
+        <div class="container">
+            <div id="form">     
+                <h1><a>扫码登录</a> <span>|</span> <a>账户登录</a></h1>
+                <input type="text" id="text" placeholder="手机号码/用户名/邮箱/门店会员卡号">
+                <input type="password" id="pass" placeholder="密码">
+                <p id="left"><input id="checkbox" type="checkbox"><span>同意协议</span> </p>    
+                <p id="right"><span>忘记密码</span>|<span></span><a href="./add.html" style="color: black;">免费注册</a></span></p>
+                <button type="submit" id="sub" disabled>登入</button>
+                <!-- <p><input type="submit" id="sub" value="登录"></p> -->
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../js/ajax.js"></script>
+<script src="../js/cookie.js"></script>
+<script>
+    
+       
+        //获取操作对象
+var btn=document.querySelector("#checkbox")
+var submit=document.querySelector('[type="submit"]')
+var user=document.querySelector('#text')
+var pass=document.querySelector('#pass')
+var search=location.search
+//给当前按钮对象绑定点击事件
+btn.onclick=function(){
+    //判断当前选项是否被选中
+    if(btn.checked){
+        //取消登录按钮的禁用
+        submit.disabled=false
+    }else{
+        submit.disabled=true
+    }
+}
+
+//给能被点击的登录按钮绑定点击事件
+submit.onclick=function(){
+    //获取账号输入框中的value
+    var u1=user.value
+    var p1=pass.value
+    console.log(u1);
+    console.log(p1);
+    //调用ajax发送请求
+    Ajax({
+        url:'../php/login.php',
+        type:'post',
+        data:`username=${u1}&password=${p1}`,
+        success:function(dt){
+            //判断当前返回值是否等于1
+            if(dt==1){
+                if(search){
+                    //获取参数中传入的地址
+                    var new_url=search.split('=')[1]
+                    location.href=new_url
+                }else{
+                    location.href=".car/.html"
+                    alert("登入成功")
+                }
+                setCookie("user",u1)
+            }else{
+                alert("登录失败")
+            }
+        }
+    })
+    return false
+    
+}
+
+</script>
+</html>

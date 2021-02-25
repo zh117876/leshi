@@ -1,0 +1,138 @@
+ .container{
+    width: 986px;
+    margin: 0 auto;
+}
+header{
+    height: 120px;
+    border-top: 1px solid #dadce0;
+    border-bottom: 1px solid #dadce0;
+
+}
+header>div>h1>a{
+    display: block;
+    width: 300px; 
+    height: 62px;
+    background: url(https://css.gomein.net.cn/images/regfront/register/loginlogo.png) no-repeat;
+    margin-top: 35px;
+    float: left;
+    text-indent: -999999px;
+}
+#add{
+    border-top: 1px solid #fff1e8;
+    height: 510px;
+    background: url(https://i1.letvimg.com/lc07_img/201607/29/15/13/operatbg.jpg) no-repeat center;
+}
+#add>div>#form{
+    overflow: hidden;
+    width: 350px;
+    height: 383px;
+    background: #ffffff;
+    float: right;
+    margin-top: 54px;
+}
+#add>div>#form>h1{
+    height: 54px;
+    border-bottom: 1px solid #f4f4f4;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+}
+#add>div>#form>h1>a{
+    float: left;
+    display: block;
+    width: 170px;
+    text-align: center;
+    line-height: 54px;
+    color: #5e5e5e;
+}
+#add>div>#form>h1>a:nth-child(3){
+    float: right;
+    color: #e7101e;
+}
+#add>div>#form>h1>span{
+    font-size: 24px;
+    line-height: 54px;
+    color: #f4f4f4;
+}
+#add>div>#form>input{
+    width: 288px;
+    height: 40px;
+    border: 1px solid #cccccc;
+    text-indent: 11px;
+    margin: 10px 0 0 30px;
+
+}
+#add>div>#form>input::placeholder{
+    text-indent: 11px;
+    color: #a5a5a5;
+}
+p{
+    margin-bottom: 0;
+}
+#left{
+    height: 40px;
+    float: left;
+    width: 74px;
+    line-height: 40px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+#checkbox{
+    float: left;
+    margin-top: 13px;
+}
+#left>span{
+    float: right;
+}
+#right{
+    float: right;
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 22px;
+
+}
+#right>span{
+    margin: 0 12px;
+    cursor: pointer;
+
+}
+
+#form>p:nth-of-type(3){
+    margin-top: 50px;
+
+}
+a{
+    cursor: pointer;
+}
+#sub{
+    display: block;
+    width: 290px; 
+    height: 40px;
+    margin: auto;
+    border: 0;
+    background:#009de6;
+    color: #ffffff;
+}
+#form>p:nth-of-type(3)>input:hover{
+    background:skyblue;
+    opacity: 0.9;
+}
+#div{
+    margin-top: 28px;
+    cursor: pointer;
+}
+footer{
+    border-top: 1px solid #dd00a7;
+    height: 292px;
+    background: #f7f7f7;
+    overflow: hidden;
+}
+footer img{
+    margin-top: -2px;
+    cursor: pointer;
+}
+.addd{
+    color: #000;
+}
